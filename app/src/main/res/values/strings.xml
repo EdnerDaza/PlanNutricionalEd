@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">PLAN NUTRICIONAL</string>
+    <string name="plan_nutricional">PLAN NUTRICIONAL</string>
+    <string name="plan_nutricional_text">Este plan nutricional ha sido elaborado de acuerdo a sus
+        necesidades, por lo tanto, es exclusivamente para usted.</string>
+    <string name="date">FECHA</string>
+    <string name="hint_date">inserte fecha&#8230;</string>
+    <string name="name">NOMBRES Y APELLIDOS</string>
+    <string name="hint_name">inserte nombres y apellidos&#8230;</string>
+    <string name="weigth">PESO (Kg)</string>
+    <string name="hint_weigth">inserte peso&#8230;</string>
+    <string name="size">TALLA (Cm)</string>
+    <string name="hint_size">inserte talla&#8230;</string>
+    <string name="imc">IMC</string>
+    <string name="hint_imc">inserte imc&#8230;</string>
+    <string name="ref_weigth">PESO REFERENCIA (Kg)</string>
+    <string name="hint_ref_weigth">inserte paso referencia&#8230;</string>
+    <string name="goal_weigth">PESO META (Kg)</string>
+    <string name="hint_goal_weigth">inserte peso meta&#8230;</string>
+    <string name="footer">FAVOR PRESENTAR ESTE PLAN EN CADA CONTROL</string>
+    <string name="ed_logo">Edner Mobile</string>
+    <string name="button_edit">Editar</string>
+    <string name="button_save">Guardar</string>
+    <string name="error_save">Campo %1$s Vacio, por favor llene este campo y proceda a guardar</string>
+    <string name="done_save">Informacion guardada satisfactoriamente</string>
+    <string name="button_cancel">Cancelar</string>
+
+</resources>
