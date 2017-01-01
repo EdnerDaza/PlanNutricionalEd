@@ -103,7 +103,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         if (id == R.id.action_recommendations) {
              Intent mainIntent = new Intent().setClass(
                         MainActivity.this, RecommendationsActivity.class);
-                startActivity(mainIntent);
+            startActivity(mainIntent);
+            overridePendingTransition(R.anim.left_to_right, R.anim.right_to_left);
             return true;
         }
 

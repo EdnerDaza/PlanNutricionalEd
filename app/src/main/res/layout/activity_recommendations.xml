@@ -8,6 +8,229 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@drawable/app_background"
     tools:context="com.ednerdaza.plannutricionaled.mvc.controllers.activities.RecommendationsActivity">
+
+    <ScrollView
+        android:id="@+id/scrollView_recommendations"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true">
+
+        <RelativeLayout
+            android:id="@+id/relativelayout_scrollview_recommendations"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/padding_margin_10"
+            android:paddingLeft="@dimen/padding_margin_10"
+            android:paddingRight="@dimen/padding_margin_10"
+            android:paddingTop="@dimen/padding_margin_10"
+            android:background="@color/colorPrimaryAlfa">
+
+            <TextView
+                android:id="@+id/textview_title_recommendations"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorWhite"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textSize="@dimen/size_20"
+                android:text="@string/title_recommendations" />
+
+            <TextView
+                android:id="@+id/textview_rule_1_recommendations"
+                android:layout_below="@+id/textview_title_recommendations"
+                android:layout_marginTop="@dimen/padding_margin_10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorWhite"
+                android:gravity="start"
+                android:textStyle="normal"
+                android:textSize="@dimen/size_17"
+                android:ellipsize="marquee"
+                android:text="@string/rule_1"
+                android:drawableStart="@drawable/dot"
+                android:drawableLeft="@drawable/dot"
+                android:drawablePadding="@dimen/padding_margin_10"/>
+
+            <TextView
+                android:id="@+id/textview_rule_2_recommendations"
+                android:layout_below="@+id/textview_rule_1_recommendations"
+                android:layout_marginTop="@dimen/padding_margin_10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorWhite"
+                android:gravity="start"
+                android:textStyle="normal"
+                android:textSize="@dimen/size_17"
+                android:ellipsize="marquee"
+                android:text="@string/rule_2"
+                android:drawableStart="@drawable/dot"
+                android:drawableLeft="@drawable/dot"
+                android:drawablePadding="@dimen/padding_margin_10"/>
+
+            <TextView
+                android:id="@+id/textview_rule_3_recommendations"
+                android:layout_below="@+id/textview_rule_2_recommendations"
+                android:layout_marginTop="@dimen/padding_margin_10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorWhite"
+                android:gravity="start"
+                android:textStyle="normal"
+                android:textSize="@dimen/size_17"
+                android:ellipsize="marquee"
+                android:text="@string/rule_3"
+                android:drawableStart="@drawable/dot"
+                android:drawableLeft="@drawable/dot"
+                android:drawablePadding="@dimen/padding_margin_10"/>
+
+            <TextView
+                android:id="@+id/textview_rule_4_recommendations"
+                android:layout_below="@+id/textview_rule_3_recommendations"
+                android:layout_marginTop="@dimen/padding_margin_10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorWhite"
+                android:gravity="start"
+                android:textStyle="normal"
+                android:textSize="@dimen/size_17"
+                android:ellipsize="marquee"
+                android:text="@string/rule_4"
+                android:drawableStart="@drawable/dot"
+                android:drawableLeft="@drawable/dot"
+                android:drawablePadding="@dimen/padding_margin_10"/>
+
+            <TextView
+                android:id="@+id/textview_rule_5_recommendations"
+                android:layout_below="@+id/textview_rule_4_recommendations"
+                android:layout_marginTop="@dimen/padding_margin_10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorWhite"
+                android:gravity="start"
+                android:textStyle="normal"
+                android:textSize="@dimen/size_17"
+                android:ellipsize="marquee"
+                android:text="@string/rule_5"
+                android:drawableStart="@drawable/dot"
+                android:drawableLeft="@drawable/dot"
+                android:drawablePadding="@dimen/padding_margin_10"/>
+
+            <TextView
+                android:id="@+id/textview_rule_6_recommendations"
+                android:layout_below="@+id/textview_rule_5_recommendations"
+                android:layout_marginTop="@dimen/padding_margin_10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorWhite"
+                android:gravity="start"
+                android:textStyle="normal"
+                android:textSize="@dimen/size_17"
+                android:ellipsize="marquee"
+                android:text="@string/rule_6"
+                android:drawableStart="@drawable/dot"
+                android:drawableLeft="@drawable/dot"
+                android:drawablePadding="@dimen/padding_margin_10"/>
+
+            <TextView
+                android:id="@+id/textview_rule_7_recommendations"
+                android:layout_below="@+id/textview_rule_6_recommendations"
+                android:layout_marginTop="@dimen/padding_margin_10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorWhite"
+                android:gravity="start"
+                android:textStyle="normal"
+                android:textSize="@dimen/size_17"
+                android:ellipsize="marquee"
+                android:text="@string/rule_7"
+                android:drawableStart="@drawable/dot"
+                android:drawableLeft="@drawable/dot"
+                android:drawablePadding="@dimen/padding_margin_10"/>
+
+            <TextView
+                android:id="@+id/textview_rule_8_recommendations"
+                android:layout_below="@+id/textview_rule_7_recommendations"
+                android:layout_marginTop="@dimen/padding_margin_10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorWhite"
+                android:gravity="start"
+                android:textStyle="normal"
+                android:textSize="@dimen/size_17"
+                android:ellipsize="marquee"
+                android:text="@string/rule_8"
+                android:drawableStart="@drawable/dot"
+                android:drawableLeft="@drawable/dot"
+                android:drawablePadding="@dimen/padding_margin_10"/>
+
+            <TextView
+                android:id="@+id/textview_rule_9_recommendations"
+                android:layout_below="@+id/textview_rule_8_recommendations"
+                android:layout_marginTop="@dimen/padding_margin_10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorWhite"
+                android:gravity="start"
+                android:textStyle="normal"
+                android:textSize="@dimen/size_17"
+                android:ellipsize="marquee"
+                android:text="@string/rule_9"
+                android:drawableStart="@drawable/dot"
+                android:drawableLeft="@drawable/dot"
+                android:drawablePadding="@dimen/padding_margin_10"/>
+
+            <TextView
+                android:id="@+id/textview_rule_10_recommendations"
+                android:layout_below="@+id/textview_rule_9_recommendations"
+                android:layout_marginTop="@dimen/padding_margin_10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorWhite"
+                android:gravity="start"
+                android:textStyle="normal"
+                android:textSize="@dimen/size_17"
+                android:ellipsize="marquee"
+                android:text="@string/rule_10"
+                android:drawableStart="@drawable/dot"
+                android:drawableLeft="@drawable/dot"
+                android:drawablePadding="@dimen/padding_margin_10"/>
+
+            <TextView
+                android:id="@+id/textview_rule_11_recommendations"
+                android:layout_below="@+id/textview_rule_10_recommendations"
+                android:layout_marginTop="@dimen/padding_margin_10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorWhite"
+                android:gravity="start"
+                android:textStyle="normal"
+                android:textSize="@dimen/size_17"
+                android:ellipsize="marquee"
+                android:text="@string/rule_11"
+                android:drawableStart="@drawable/dot"
+                android:drawableLeft="@drawable/dot"
+                android:drawablePadding="@dimen/padding_margin_10"/>
+
+            <TextView
+                android:id="@+id/textview_rule_12_recommendations"
+                android:layout_below="@+id/textview_rule_11_recommendations"
+                android:layout_marginTop="@dimen/padding_margin_10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorWhite"
+                android:gravity="start"
+                android:textStyle="normal"
+                android:textSize="@dimen/size_17"
+                android:ellipsize="marquee"
+                android:text="@string/rule_12"
+                android:drawableStart="@drawable/dot"
+                android:drawableLeft="@drawable/dot"
+                android:drawablePadding="@dimen/padding_margin_10"/>
+
+        </RelativeLayout>
+
+    </ScrollView>
 
 </RelativeLayout>

@@ -24,6 +24,41 @@
     <string name="error_save">Campo %1$s Vacio, por favor llene este campo y proceda a guardar</string>
     <string name="done_save">Informacion guardada satisfactoriamente</string>
     <string name="button_cancel">Cancelar</string>
-    <string name="action_recommendations">Recomendaciones</string>
-
+    <string name="action_recommendations">Recomendaciones&#8230;</string>
+    <string name="title_recommendations">Recomendaciones Sobrepeso y Obesidad</string>
+    <string name="dot">\u2022</string>
+    <string name="rule_1">Pensar siempre si lo que come le aporta beneficios para su salud.</string>
+    <string name="rule_2">Comer de forma equilibrada los alimentos de todos los grupos, para asegurar
+        una dieta variada y sana.</string>
+    <string name="rule_3">Evitar omitir el desayuno, es la comida que activa el metabolismo.</string>
+    <string name="rule_4">Respetar los horarios de comida; recuerde que como minimo hay que hacer
+        5 comidas al dia: desayuno, media mañana, almuerzo, algo, comida.</string>
+    <string name="rule_5">Incluir en la alimentacion 5 raciones de frutas y verduras para garantizar
+        una buena salud: una apropiada distribucion de la fruta es comerla en la media mañana y algo;
+        los jugos naturales en el almuerzo y la comida. Las verduras consumirlas minimo 1/2 pocillo
+        chocolatero en almuerzo y comida.</string>
+    <string name="rule_6">Controlar el consumo de harinas refinadas como pan blanco, galletas de soda,
+        pasteles; prefiera los alimentos integrales no por que tengan menos calorias sino por que
+        aportan mas nutrientes, antioxidantes y fibra.</string>
+    <string name="rule_7">Moderar el consumo de comidas rapidas como pizza, hamburguesas, papas
+        fritas, mecatos. Son alimentos que aportan grandes cantidades de azucar, sal y grasas saturadas,
+        elementos que se recomienda consumir de forma ocasional, debido a su relacion con algunas
+        enfermedades como obesidad, diabetes e hipertension.</string>
+    <string name="rule_8">Evitar bebidas tipo refrescos instantaneos, jugos de caja, gaseosas, maltas,
+        bebidas achocolatadas y te comerciales, por su alto contenido de azucares; un solo refresco
+        de los mencionoados puede llegar a contener hasta 8 cucharadas de azucar (cada cucharada de
+        azucar equivale a 5g).</string>
+    <string name="rule_9">Aprender a leer las etiquetas nutricionales para saber que se esta consumiendo:\n
+        Lo mas importante antes que las calorias es revisar el tamaño de porcion, a veces un paquete
+        puede contener varias porciones.\n El contenido de azucar ideal no debe exceder 7g y el
+        contenido de sodio no debe exceder 200mg.\n Cuando un producto dice "sin azucar adicionada", debe
+        mirar los ingredientes, y si refiere jarabe de maiz, syrup, miel, o fructosa, puede llegar a
+        ser mas dañino que la misma azucar refinada.</string>
+    <string name="rule_10">Evitar azucar, panela o miel para enulzar, una buena opcion es reemplazarlas
+        por endulzantes no caloricos.</string>
+    <string name="rule_11">Si aparece ansiedad por dulce, se recomienda fruta o gelatina dietetica o
+        chocolatina dietetica que no exceda 25 calorias, o 2 cucharadas de fruta deshidratada, esto se
+        recomienda maximo 2 veces al dia de ser necesario.</string>
+    <string name="rule_12">Complementar una alimentacion saludable con actividad fisica o deportes
+        tiena mejores resultados para la salud y el estado nutricional.</string>
 </resources>

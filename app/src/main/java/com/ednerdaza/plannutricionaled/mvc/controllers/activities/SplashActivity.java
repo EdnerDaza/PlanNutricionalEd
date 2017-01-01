@@ -41,10 +41,11 @@ public class SplashActivity extends AppCompatActivity
 
     public void openDashboard()
     {
-        Intent mainIntent = new Intent().setClass(
-                SplashActivity.this, MainActivity.class);
+        Intent mainIntent = new Intent().setClass(SplashActivity.this, MainActivity.class);
+        mainIntent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
         startActivity(mainIntent);
         finish();
+        overridePendingTransition(R.anim.left_to_right, R.anim.right_to_left);
     }
     
 }
