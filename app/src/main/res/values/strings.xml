@@ -25,6 +25,7 @@
     <string name="done_save">Informacion guardada satisfactoriamente</string>
     <string name="button_cancel">Cancelar</string>
     <string name="action_recommendations">Recomendaciones&#8230;</string>
+    <string name="action_switch_workouts">Cambiar a Ejercicios&#8230;</string>
     <string name="title_recommendations">Recomendaciones Sobrepeso y Obesidad</string>
     <string name="dot">\u2022</string>
     <string name="rule_1">Pensar siempre si lo que come le aporta beneficios para su salud.</string>
@@ -61,7 +62,7 @@
         recomienda maximo 2 veces al dia de ser necesario.</string>
     <string name="rule_12">Complementar una alimentacion saludable con actividad fisica o deportes
         tiena mejores resultados para la salud y el estado nutricional.</string>
-    <string name="title_activity_daily_plan">Plan Diario</string>
+    <string name="title_activity_daily_plan">PLAN DIARIO DE ALIMENTACION</string>
     <string name="action_settings">Settings</string>
     <string name="section_format">Hello World from section: %1$d</string>
     <string name="breakfast">DESAYUNO</string>
@@ -70,4 +71,16 @@
     <string name="some">ALGO</string>
     <string name="meal">COMIDA</string>
     <string name="dinner">MERIENDA</string>
+    <string name="milk">LACTEO</string>
+    <string name="hint_milk">inserte numero de lacteo&#8230;</string>
+    <string name="chesse_or">QUESO O SUSTITUTOS</string>
+    <string name="hint_chesse_or">inserte numero de quesos o sustitutos&#8230;</string>
+    <string name="flour">HARINA</string>
+    <string name="hint_flour">inserte numero de harina&#8230;</string>
+    <string name="fruit">FRUTA</string>
+    <string name="hint_fruit">inserte numero de fruta&#8230;</string>
+    <string name="fat">GRASA</string>
+    <string name="hint_fat">inserte numero de grasa&#8230;</string>
+    <string name="sugar">AZUCAR</string>
+    <string name="hint_sugar">inserte numero de azucar&#8230;</string>
 </resources>

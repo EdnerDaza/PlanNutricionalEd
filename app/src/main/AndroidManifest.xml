@@ -36,7 +36,8 @@
         </activity>
         <activity
             android:name=".mvc.controllers.activities.DailyPlanActivity"
-            android:label="@string/title_activity_daily_plan"></activity>
+            android:windowSoftInputMode="stateHidden"
+            android:label="@string/title_activity_daily_plan"/>
     </application>
 
 </manifest>

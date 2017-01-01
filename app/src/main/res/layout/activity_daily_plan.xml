@@ -47,6 +47,6 @@ tools:context="com.ednerdaza.plannutricionaled.mvc.controllers.activities.DailyP
     android:layout_height="wrap_content"
     android:layout_gravity="end|bottom"
     android:layout_margin="@dimen/fab_margin"
-    app:srcCompat="@android:drawable/ic_dialog_email" />
+    app:srcCompat="@android:drawable/ic_media_rew" />
 
 </android.support.design.widget.CoordinatorLayout>

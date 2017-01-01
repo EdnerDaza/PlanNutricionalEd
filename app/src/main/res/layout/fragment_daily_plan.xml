@@ -6,11 +6,280 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@drawable/app_background"
     tools:context="com.ednerdaza.plannutricionaled.mvc.controllers.activities.DailyPlanActivity$PlaceholderFragment">
 
-    <TextView
-        android:id="@+id/section_label"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+    <ScrollView
+        android:id="@+id/scrollView_daily"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true">
+
+        <LinearLayout
+            android:id="@+id/linearlayout_scrollview_daily"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/padding_margin_10"
+            android:paddingLeft="@dimen/padding_margin_10"
+            android:paddingRight="@dimen/padding_margin_10"
+            android:paddingTop="@dimen/padding_margin_10"
+            android:background="@color/colorPrimaryAlfa">
+
+            <RelativeLayout
+                android:id="@+id/relativelayout_milk_daily"
+                android:gravity="center_vertical"
+                android:layout_marginBottom="@dimen/padding_margin_10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/textview_milk_daily"
+                    android:layout_marginTop="@dimen/padding_margin_10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorWhite"
+                    android:gravity="start"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/size_17"
+                    android:text="@string/milk" />
+
+                <EditText
+                    android:id="@+id/edittext_milk_daily"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/textview_milk_daily"
+                    android:layout_toEndOf="@+id/textview_milk_daily"
+                    android:layout_marginLeft="@dimen/padding_margin_10"
+                    android:layout_marginStart="@dimen/padding_margin_10"
+                    android:inputType="number"
+                    android:textColor="@color/colorWhite"
+                    android:hint="@string/hint_milk"
+                    android:textStyle="italic"
+                    android:gravity="end"
+                    android:enabled="true"/>
+
+                <Spinner
+                    android:id="@+id/spinner_milk_daily"
+                    android:layout_marginTop="@dimen/padding_margin_10"
+                    android:layout_below="@+id/textview_milk_daily"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relativelayout_chesse_or_daily"
+                android:layout_marginBottom="@dimen/padding_margin_10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:id="@+id/textview_chesse_or_daily"
+                    android:layout_marginTop="@dimen/padding_margin_10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorWhite"
+                    android:gravity="start"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/size_17"
+                    android:text="@string/chesse_or" />
+
+                <EditText
+                    android:id="@+id/edittext_chesse_daily"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/textview_chesse_or_daily"
+                    android:layout_toEndOf="@+id/textview_chesse_or_daily"
+                    android:layout_marginLeft="@dimen/padding_margin_10"
+                    android:layout_marginStart="@dimen/padding_margin_10"
+                    android:inputType="number"
+                    android:textColor="@color/colorWhite"
+                    android:hint="@string/hint_chesse_or"
+                    android:textStyle="italic"
+                    android:gravity="end"
+                    android:enabled="true"/>
+
+                <Spinner
+                    android:id="@+id/spinner_chesse_or_daily"
+                    android:layout_marginTop="@dimen/padding_margin_10"
+                    android:layout_below="@+id/textview_chesse_or_daily"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relativelayout_flour_daily"
+                android:layout_marginBottom="@dimen/padding_margin_10"
+                android:gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/textview_flour_daily"
+                    android:layout_marginTop="@dimen/padding_margin_10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorWhite"
+                    android:gravity="start"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/size_17"
+                    android:text="@string/flour" />
+
+                <EditText
+                    android:id="@+id/edittext_flour_daily"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/textview_flour_daily"
+                    android:layout_toEndOf="@+id/textview_flour_daily"
+                    android:layout_marginLeft="@dimen/padding_margin_10"
+                    android:layout_marginStart="@dimen/padding_margin_10"
+                    android:inputType="number"
+                    android:textColor="@color/colorWhite"
+                    android:hint="@string/hint_flour"
+                    android:textStyle="italic"
+                    android:gravity="end"
+                    android:enabled="true"/>
+
+                <Spinner
+                    android:id="@+id/spinner_flour_daily"
+                    android:layout_marginTop="@dimen/padding_margin_10"
+                    android:layout_below="@+id/textview_flour_daily"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relativelayout_fruit_daily"
+                android:layout_marginBottom="@dimen/padding_margin_10"
+                android:gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/textview_fruit_daily"
+                    android:layout_marginTop="@dimen/padding_margin_10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorWhite"
+                    android:gravity="start"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/size_17"
+                    android:text="@string/fruit" />
+
+                <EditText
+                    android:id="@+id/edittext_fruit_daily"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/textview_fruit_daily"
+                    android:layout_toEndOf="@+id/textview_fruit_daily"
+                    android:layout_marginLeft="@dimen/padding_margin_10"
+                    android:layout_marginStart="@dimen/padding_margin_10"
+                    android:inputType="number"
+                    android:textColor="@color/colorWhite"
+                    android:hint="@string/hint_fruit"
+                    android:textStyle="italic"
+                    android:gravity="end"
+                    android:enabled="true"/>
+
+                <Spinner
+                    android:id="@+id/spinner_fruit_daily"
+                    android:layout_marginTop="@dimen/padding_margin_10"
+                    android:layout_below="@+id/textview_fruit_daily"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relativelayout_fat_daily"
+                android:layout_marginBottom="@dimen/padding_margin_10"
+                android:gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/textview_fat_daily"
+                    android:layout_marginTop="@dimen/padding_margin_10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorWhite"
+                    android:gravity="start"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/size_17"
+                    android:text="@string/fat" />
+
+                <EditText
+                    android:id="@+id/edittext_fat_daily"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/textview_fat_daily"
+                    android:layout_toEndOf="@+id/textview_fat_daily"
+                    android:layout_marginLeft="@dimen/padding_margin_10"
+                    android:layout_marginStart="@dimen/padding_margin_10"
+                    android:inputType="number"
+                    android:textColor="@color/colorWhite"
+                    android:hint="@string/hint_fat"
+                    android:textStyle="italic"
+                    android:gravity="end"
+                    android:enabled="true"/>
+
+                <Spinner
+                    android:id="@+id/spinner_fat_daily"
+                    android:layout_marginTop="@dimen/padding_margin_10"
+                    android:layout_below="@+id/textview_fat_daily"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relativelayout_sugar_daily"
+                android:layout_marginBottom="@dimen/padding_margin_10"
+                android:gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/textview_sugar_daily"
+                    android:layout_marginTop="@dimen/padding_margin_10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorWhite"
+                    android:gravity="start"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/size_17"
+                    android:text="@string/sugar" />
+
+                <EditText
+                    android:id="@+id/edittext_sugar_daily"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/textview_sugar_daily"
+                    android:layout_toEndOf="@+id/textview_sugar_daily"
+                    android:layout_marginLeft="@dimen/padding_margin_10"
+                    android:layout_marginStart="@dimen/padding_margin_10"
+                    android:inputType="number"
+                    android:textColor="@color/colorWhite"
+                    android:hint="@string/hint_sugar"
+                    android:textStyle="italic"
+                    android:gravity="end"
+                    android:enabled="true"/>
+
+                <Spinner
+                    android:id="@+id/spinner_sugar_daily"
+                    android:layout_marginTop="@dimen/padding_margin_10"
+                    android:layout_below="@+id/textview_sugar_daily"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
 
 </RelativeLayout>
