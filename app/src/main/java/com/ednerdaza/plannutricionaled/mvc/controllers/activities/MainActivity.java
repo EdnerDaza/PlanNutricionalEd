@@ -1,11 +1,15 @@
 package com.ednerdaza.plannutricionaled.mvc.controllers.activities;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.ednerdaza.plannutricionaled.R;
@@ -15,9 +19,11 @@ import com.ednerdaza.plannutricionaled.mvc.controllers.utilities.Config;
 public class MainActivity extends AppCompatActivity implements View.OnClickListener{
 
     private AppPreferences mAppPreferences;
-    private Button mButtonEdit, mButtonSave, mButtonCancel;
+    private Button mButtonEditSave, mButtonCancel;
     private EditText mEditTextDate, mEditTextName, mEditTextWeigth, mEditTextSize, mEditTextIMC,
             mEditTextRefWeigth, mEditTextGoalWeigth;
+    private TextView mTextViewClick;
+    private boolean mButtonEditSaveState = false;
 
     //region LIFECICLEACTIVITYMETHODS
     @Override
@@ -27,13 +33,13 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         setContentView(R.layout.activity_main);
         mAppPreferences = new AppPreferences(this);
 
-        mButtonEdit = (Button)findViewById(R.id.button_edit_footer_main);
+        mButtonEditSave = (Button)findViewById(R.id.button_edit_save_footer_main);
         mButtonCancel= (Button)findViewById(R.id.button_cancel_footer_main);
-        mButtonSave = (Button)findViewById(R.id.button_save_footer_main);
+        mTextViewClick = (TextView) findViewById(R.id.textview_title_main);
 
-        mButtonEdit.setOnClickListener(this);
+        mButtonEditSave.setOnClickListener(this);
         mButtonCancel.setOnClickListener(this);
-        mButtonSave.setOnClickListener(this);
+        mTextViewClick.setOnClickListener(this);
 
         mEditTextDate = (EditText) findViewById(R.id.edittext_date_main);
         mEditTextName = (EditText) findViewById(R.id.edittext_name_main);
@@ -58,23 +64,51 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     public void onClick(View v) {
 
         switch (v.getId()){
-            case R.id.button_edit_footer_main:
+            case R.id.button_edit_save_footer_main:
                 Log.v( Config.APP_LOG , " // EDIT BUTTON CLICK");
-                editPreferences();
+                if(mButtonEditSaveState){
+                    editPreferences();
+                }else {
+                    savePreferences();
+                }
                 break;
             case R.id.button_cancel_footer_main:
                 Log.v( Config.APP_LOG , " // CANCEL BUTTON CLICK");
                 openPreferences();
-                break;
-            case R.id.button_save_footer_main:
-                Log.v( Config.APP_LOG , " // SAVE BUTTON CLICK");
-                savePreferences();
                 break;
             default:
                 Log.v( Config.APP_LOG , " // DEFAULT CLICK");
                 break;
         }
 
+    }
+    //endregion
+
+    //region OPTIONSMENU
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        // Inflate the menu; this adds items to the action bar if it is present.
+        getMenuInflater().inflate(R.menu.menu_main, menu);
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        // Handle action bar item clicks here. The action bar will
+        // automatically handle clicks on the Home/Up button, so long
+        // as you specify a parent activity in AndroidManifest.xml.
+        int id = item.getItemId();
+
+        //noinspection SimplifiableIfStatement
+        if (id == R.id.action_recommendations) {
+             Intent mainIntent = new Intent().setClass(
+                        MainActivity.this, RecommendationsActivity.class);
+                startActivity(mainIntent);
+                finish();
+            return true;
+        }
+
+        return super.onOptionsItemSelected(item);
     }
     //endregion
 
@@ -136,15 +170,17 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             mEditTextRefWeigth.setEnabled(true);
             mEditTextGoalWeigth.setEnabled(true);
 
-            mButtonEdit.setEnabled(false);
-            mButtonSave.setEnabled(true);
+            mButtonEditSave.setEnabled(true);
+            mButtonEditSave.setVisibility(View.VISIBLE);
             mButtonCancel.setEnabled(false);
-            mButtonCancel.setVisibility(View.GONE);
+            mButtonCancel.setVisibility(View.VISIBLE);
+            changeEditSaveButton(false);
         }else {
-            mButtonEdit.setEnabled(true);
-            mButtonSave.setEnabled(false);
+            mButtonEditSave.setEnabled(true);
+            mButtonEditSave.setVisibility(View.VISIBLE);
             mButtonCancel.setEnabled(false);
-            mButtonCancel.setVisibility(View.GONE);
+            mButtonCancel.setVisibility(View.VISIBLE);
+            changeEditSaveButton(true);
         }
 
     }
@@ -186,19 +222,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                                     mAppPreferences.setStorageDate(date);
 
                                     Toast.makeText(this, getResources().getString(R.string.done_save), Toast.LENGTH_SHORT).show();
-
-                                    mEditTextDate.setEnabled(false);
-                                    mEditTextName.setEnabled(false);
-                                    mEditTextWeigth.setEnabled(false);
-                                    mEditTextSize.setEnabled(false);
-                                    mEditTextIMC.setEnabled(false);
-                                    mEditTextRefWeigth.setEnabled(false);
-                                    mEditTextGoalWeigth.setEnabled(false);
-
-                                    mButtonEdit.setEnabled(true);
-                                    mButtonSave.setEnabled(false);
-                                    mButtonCancel.setEnabled(false);
-                                    mButtonCancel.setVisibility(View.GONE);
+                                    openPreferences();
 
                                 }else {
                                     Toast.makeText(this, String.format( getResources().getString(R.string.error_save) ,
@@ -247,28 +271,20 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         mEditTextRefWeigth.setEnabled(true);
         mEditTextGoalWeigth.setEnabled(true);
 
-        mButtonEdit.setEnabled(false);
-        mButtonSave.setEnabled(true);
+        mButtonEditSave.setEnabled(true);
+        mButtonEditSave.setVisibility(View.VISIBLE);
         mButtonCancel.setEnabled(true);
         mButtonCancel.setVisibility(View.VISIBLE);
+        changeEditSaveButton(false);
     }
 
-    private void cancelEditPreferences(){
-        Log.v( Config.APP_LOG , " // cancelEditPreferences()");
-        mEditTextDate.setEnabled(false);
-        mEditTextName.setEnabled(false);
-        mEditTextWeigth.setEnabled(false);
-        mEditTextSize.setEnabled(false);
-        mEditTextIMC.setEnabled(false);
-        mEditTextRefWeigth.setEnabled(false);
-        mEditTextGoalWeigth.setEnabled(false);
-
-        mButtonEdit.setEnabled(true);
-        mButtonSave.setEnabled(false);
-        mButtonCancel.setEnabled(false);
-        mButtonCancel.setVisibility(View.GONE);
-
-        openPreferences();
+    private void changeEditSaveButton(boolean state){
+        mButtonEditSaveState = state;
+        if(mButtonEditSaveState){
+            mButtonEditSave.setText(getResources().getString(R.string.button_edit));
+        }else{
+            mButtonEditSave.setText(getResources().getString(R.string.button_save));
+        }
     }
 
 }

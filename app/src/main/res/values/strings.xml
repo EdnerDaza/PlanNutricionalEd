@@ -24,5 +24,6 @@
     <string name="error_save">Campo %1$s Vacio, por favor llene este campo y proceda a guardar</string>
     <string name="done_save">Informacion guardada satisfactoriamente</string>
     <string name="button_cancel">Cancelar</string>
+    <string name="action_recommendations">Recomendaciones</string>
 
 </resources>
