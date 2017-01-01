@@ -61,4 +61,13 @@
         recomienda maximo 2 veces al dia de ser necesario.</string>
     <string name="rule_12">Complementar una alimentacion saludable con actividad fisica o deportes
         tiena mejores resultados para la salud y el estado nutricional.</string>
+    <string name="title_activity_daily_plan">Plan Diario</string>
+    <string name="action_settings">Settings</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+    <string name="breakfast">DESAYUNO</string>
+    <string name="snack">MEDIA MAÑANA</string>
+    <string name="lunch">ALMUERZO</string>
+    <string name="some">ALGO</string>
+    <string name="meal">COMIDA</string>
+    <string name="dinner">MERIENDA</string>
 </resources>

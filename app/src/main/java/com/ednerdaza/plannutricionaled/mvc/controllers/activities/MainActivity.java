@@ -1,6 +1,8 @@
 package com.ednerdaza.plannutricionaled.mvc.controllers.activities;
 
 import android.content.Intent;
+import android.support.design.widget.FloatingActionButton;
+import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
@@ -24,6 +26,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             mEditTextRefWeigth, mEditTextGoalWeigth;
     private TextView mTextViewClick;
     private boolean mButtonEditSaveState = false;
+    private FloatingActionButton mFloatingActionButtonNext;
 
     //region LIFECICLEACTIVITYMETHODS
     @Override
@@ -35,11 +38,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         mButtonEditSave = (Button)findViewById(R.id.button_edit_save_footer_main);
         mButtonCancel= (Button)findViewById(R.id.button_cancel_footer_main);
-        mTextViewClick = (TextView) findViewById(R.id.textview_title_main);
+        mFloatingActionButtonNext = (FloatingActionButton) findViewById(R.id.floatingactionbutton_main);
 
         mButtonEditSave.setOnClickListener(this);
         mButtonCancel.setOnClickListener(this);
-        mTextViewClick.setOnClickListener(this);
+        mFloatingActionButtonNext.setOnClickListener(this);
 
         mEditTextDate = (EditText) findViewById(R.id.edittext_date_main);
         mEditTextName = (EditText) findViewById(R.id.edittext_name_main);
@@ -76,6 +79,17 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 Log.v( Config.APP_LOG , " // CANCEL BUTTON CLICK");
                 openPreferences();
                 break;
+            case R.id.floatingactionbutton_main:
+                Log.v( Config.APP_LOG , " // NEXT BUTTON CLICK");
+               /* Snackbar.make(v, "Replace with your own action", Snackbar.LENGTH_LONG)
+                        .setAction("Action", null).show();*/
+                Intent mainIntent = new Intent().setClass(
+                        MainActivity.this, DailyPlanActivity.class);
+                startActivity(mainIntent);
+                //overridePendingTransition(R.anim.left_to_right, R.anim.right_to_left);
+                this.overridePendingTransition(R.anim.anim_slide_in_left, R.anim.anim_slide_out_left);
+                break;
+
             default:
                 Log.v( Config.APP_LOG , " // DEFAULT CLICK");
                 break;
@@ -104,7 +118,18 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
              Intent mainIntent = new Intent().setClass(
                         MainActivity.this, RecommendationsActivity.class);
             startActivity(mainIntent);
-            overridePendingTransition(R.anim.left_to_right, R.anim.right_to_left);
+            //overridePendingTransition(R.anim.left_to_right, R.anim.right_to_left);
+            this.overridePendingTransition(R.anim.anim_slide_in_left, R.anim.anim_slide_out_left);
+            return true;
+        }
+
+        //noinspection SimplifiableIfStatement
+        if (id == R.id.action_switch_workouts) {
+            Intent mainIntent = new Intent().setClass(
+                    MainActivity.this, RecommendationsActivity.class);
+            startActivity(mainIntent);
+            //overridePendingTransition(R.anim.left_to_right, R.anim.right_to_left);
+            this.overridePendingTransition(R.anim.anim_slide_in_left, R.anim.anim_slide_out_left);
             return true;
         }
 

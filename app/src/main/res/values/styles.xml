@@ -6,6 +6,8 @@
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
+        <!--<item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>-->
     </style>
 
     <!-- Base application theme. -->
@@ -54,7 +56,20 @@
 
     <style name="TextBullet">
         <item name="android:background">@drawable/dot</item>
-        <item name="android:paddingLeft">10dp</item>
+        <item name="android:paddingLeft">@dimen/padding_margin_10</item>
+    </style>
+
+    <!--<style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />-->
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="MineCustomTabText" parent="TextAppearance.Design.Tab">
+        <item name="android:textSize">@dimen/size_10</item>
+    </style>
+
+    <style name="MyTabLayoutTextAppearance" parent="TextAppearance.AppCompat.Widget.ActionBar.Title.Inverse">
+        <item name="android:textSize">@dimen/size_7</item>
+        <item name="android:textAllCaps">true</item>
     </style>
 
 </resources>
