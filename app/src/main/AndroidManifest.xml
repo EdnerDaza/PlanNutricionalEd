@@ -26,7 +26,12 @@
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
-        <activity android:name=".mvc.controllers.activities.RecommendationsActivity"></activity>
+        <activity android:name=".mvc.controllers.activities.RecommendationsActivity"
+            android:parentActivityName=".mvc.controllers.activities.MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".mvc.controllers.activities.MainActivity" />
+        </activity>
     </application>
 
 </manifest>

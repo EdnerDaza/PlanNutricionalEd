@@ -104,7 +104,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
              Intent mainIntent = new Intent().setClass(
                         MainActivity.this, RecommendationsActivity.class);
                 startActivity(mainIntent);
-                finish();
             return true;
         }
 
