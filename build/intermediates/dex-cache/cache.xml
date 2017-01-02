@@ -3,6 +3,15 @@
 
     <item
         is-multidex="true"
+        jar="/Volumes/Data/ednerdaza/OwnProjects/PlanNutricionalED/app/build/intermediates/exploded-aar/com.android.support/transition/25.1.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="d38084015027549951cbaea5d5f6fb795cc81151">
+        <dex dex="/Volumes/Data/ednerdaza/OwnProjects/PlanNutricionalED/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-transition-25.1.0_8d051456add7305530d59a00b68c83506fbd33df/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
         jar="/Volumes/Data/ednerdaza/OwnProjects/PlanNutricionalED/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/25.1.0/jars/classes.jar"
         jumboMode="true"
         optimize="true"
@@ -12,11 +21,20 @@
     </item>
     <item
         is-multidex="true"
+        jar="/Volumes/Data/ednerdaza/OwnProjects/PlanNutricionalED/app/build/intermediates/exploded-aar/com.android.support/support-v13/25.1.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="e006c9b6f0aaed9d8c7934b74039738390fe3468">
+        <dex dex="/Volumes/Data/ednerdaza/OwnProjects/PlanNutricionalED/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-v13-25.1.0_e39d120768a1a867e1e342f5389d1e1ae2b8c9a8/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
         jar="/Volumes/Data/ednerdaza/OwnProjects/PlanNutricionalED/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
-        sha1="6eaa6922163726400b4ab09ce7e133771c0e57d3">
+        sha1="684ef5a47500d06a7e598de2358ce6233b54afd6">
         <dex dex="/Volumes/Data/ednerdaza/OwnProjects/PlanNutricionalED/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_5412c03e2d2cb108991f739cdad101706062c0a2/classes.dex" />
     </item>
     <item
@@ -30,75 +48,21 @@
     </item>
     <item
         is-multidex="true"
-        jar="/Volumes/Data/ednerdaza/OwnProjects/PlanNutricionalED/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/25.1.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="0a0ef86b7fa568a52bf6214a0326ca1f1d618da7">
-        <dex dex="/Volumes/Data/ednerdaza/OwnProjects/PlanNutricionalED/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-core-utils-25.1.0_d8bf3be09287140b0a48409295f806cf4adf4ef6/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Volumes/Data/ednerdaza/OwnProjects/PlanNutricionalED/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="0ce19ff35d888f484c549f96719c0b2c02828645">
-        <dex dex="/Volumes/Data/ednerdaza/OwnProjects/PlanNutricionalED/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_04e4eed0071b573a235eedc71793c021fae9bd42/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Volumes/Data/ednerdaza/OwnProjects/PlanNutricionalED/app/build/intermediates/exploded-aar/com.android.support/support-fragment/25.1.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="2a53c4f3518116b8c6aee0e477233f0f7da8616f">
-        <dex dex="/Volumes/Data/ednerdaza/OwnProjects/PlanNutricionalED/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-fragment-25.1.0_967d6c10175c11fa1b0f9e85330c92747e974730/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Volumes/Data/ednerdaza/OwnProjects/PlanNutricionalED/app/build/intermediates/exploded-aar/com.android.support/support-compat/25.1.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="ca3c7aa31e2726a400a6e552b93cb9f63c9a1e6d">
-        <dex dex="/Volumes/Data/ednerdaza/OwnProjects/PlanNutricionalED/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-compat-25.1.0_0388a5d2e4dfadc269301ef9fe52d15f8a74ab3c/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Volumes/Data/ednerdaza/OwnProjects/PlanNutricionalED/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/25.1.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="f02263e35e52668dd17b73bf961437e3d562b35f">
-        <dex dex="/Volumes/Data/ednerdaza/OwnProjects/PlanNutricionalED/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-media-compat-25.1.0_fbaab22dcc4af80ae67a7ac1b3094bbd9328e276/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Volumes/Data/ednerdaza/OwnProjects/PlanNutricionalED/app/build/intermediates/exploded-aar/com.android.support/transition/25.1.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="d38084015027549951cbaea5d5f6fb795cc81151">
-        <dex dex="/Volumes/Data/ednerdaza/OwnProjects/PlanNutricionalED/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-transition-25.1.0_8d051456add7305530d59a00b68c83506fbd33df/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Volumes/Data/ednerdaza/OwnProjects/PlanNutricionalED/app/build/intermediates/exploded-aar/com.android.support/support-v13/25.1.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="e006c9b6f0aaed9d8c7934b74039738390fe3468">
-        <dex dex="/Volumes/Data/ednerdaza/OwnProjects/PlanNutricionalED/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-v13-25.1.0_e39d120768a1a867e1e342f5389d1e1ae2b8c9a8/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
         jar="/Volumes/Data/ednerdaza/OwnProjects/PlanNutricionalED/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/25.1.0/jars/classes.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
         sha1="aee64634871d88a419d59eb743c1258a60f19700">
         <dex dex="/Volumes/Data/ednerdaza/OwnProjects/PlanNutricionalED/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-core-ui-25.1.0_8453c219923bc45d53236b803c568b383d660fdf/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Volumes/Data/ednerdaza/OwnProjects/PlanNutricionalED/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/25.1.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="0a0ef86b7fa568a52bf6214a0326ca1f1d618da7">
+        <dex dex="/Volumes/Data/ednerdaza/OwnProjects/PlanNutricionalED/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-core-utils-25.1.0_d8bf3be09287140b0a48409295f806cf4adf4ef6/classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -120,12 +84,48 @@
     </item>
     <item
         is-multidex="true"
+        jar="/Volumes/Data/ednerdaza/OwnProjects/PlanNutricionalED/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="01050f5f03bc063da557fc49b84f7d61beedfeef">
+        <dex dex="/Volumes/Data/ednerdaza/OwnProjects/PlanNutricionalED/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_04e4eed0071b573a235eedc71793c021fae9bd42/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Volumes/Data/ednerdaza/OwnProjects/PlanNutricionalED/app/build/intermediates/exploded-aar/com.android.support/support-fragment/25.1.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="2a53c4f3518116b8c6aee0e477233f0f7da8616f">
+        <dex dex="/Volumes/Data/ednerdaza/OwnProjects/PlanNutricionalED/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-fragment-25.1.0_967d6c10175c11fa1b0f9e85330c92747e974730/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
         jar="/Volumes/Data/ednerdaza/OwnProjects/PlanNutricionalED/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/25.1.0/jars/classes.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
         sha1="b266c8faa5af72e579b9da36ef35053ffed6ac64">
         <dex dex="/Volumes/Data/ednerdaza/OwnProjects/PlanNutricionalED/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-recyclerview-v7-25.1.0_e66a87c3b4730497876ff8b1a50d30596a81b416/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Volumes/Data/ednerdaza/OwnProjects/PlanNutricionalED/app/build/intermediates/exploded-aar/com.android.support/support-compat/25.1.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="ca3c7aa31e2726a400a6e552b93cb9f63c9a1e6d">
+        <dex dex="/Volumes/Data/ednerdaza/OwnProjects/PlanNutricionalED/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-compat-25.1.0_0388a5d2e4dfadc269301ef9fe52d15f8a74ab3c/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Volumes/Data/ednerdaza/OwnProjects/PlanNutricionalED/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/25.1.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="f02263e35e52668dd17b73bf961437e3d562b35f">
+        <dex dex="/Volumes/Data/ednerdaza/OwnProjects/PlanNutricionalED/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-media-compat-25.1.0_fbaab22dcc4af80ae67a7ac1b3094bbd9328e276/classes.dex" />
     </item>
     <item
         is-multidex="true"

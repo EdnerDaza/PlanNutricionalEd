@@ -140,7 +140,11 @@
         <item>Helado dietetico - 1 porcion</item>
     </string-array>
     <string name="sugar_prompt">Elije un Azucar o un Dulce</string>
-    <string name="action_configurations">Configuraciones</string>
+    <string name="action_configurations">Configuraciones&#8230;</string>
+    <string name="toast_switch">CAMBIA DE NUTRICION A EJERCICIOS</string>
+    <string name="milk_avaible">LACTEOS DISPONIBLES</string>
+    <string name="milk_milk">Leche</string>
+    <string name="item">Item</string>
     <string-array name="sugar_array">
         <item>Elije un Azucar o un Dulce</item>
         <item>Huevo - 1 vaso pequeño</item>
@@ -151,4 +155,19 @@
         <item>Helado dietetico - 1 porcion</item>
     </string-array>
 
+    <string-array name="accordion_sections">
+        <item>Section A</item>
+        <item>Section B</item>
+        <item>Section C</item>
+        <item>Section D</item>
+        <item>Section E</item>
+    </string-array>
+
+    <integer-array name="accordion_visibility">
+        <item>1</item>
+        <item>1</item>
+        <item>0</item>
+        <item>0</item>
+        <item>0</item>
+    </integer-array>
 </resources>

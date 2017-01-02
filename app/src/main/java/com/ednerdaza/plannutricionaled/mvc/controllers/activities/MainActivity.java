@@ -125,11 +125,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         //noinspection SimplifiableIfStatement
         if (id == R.id.action_switch_workouts) {
-            Intent mainIntent = new Intent().setClass(
+            //TODO : HACER QUE CAMBIE DE NUTRIVION A EJERCICIOS !!
+            /*Intent mainIntent = new Intent().setClass(
                     MainActivity.this, RecommendationsActivity.class);
             startActivity(mainIntent);
-            //overridePendingTransition(R.anim.left_to_right, R.anim.right_to_left);
-            this.overridePendingTransition(R.anim.anim_slide_in_left, R.anim.anim_slide_out_left);
+            this.overridePendingTransition(R.anim.anim_slide_in_left, R.anim.anim_slide_out_left);*/
+            Toast.makeText(this, getResources().getString(R.string.toast_switch), Toast.LENGTH_SHORT).show();
             return true;
         }
 

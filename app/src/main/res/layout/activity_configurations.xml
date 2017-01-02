@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:accordion="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/activity_configurations"
     android:layout_width="match_parent"
@@ -11,21 +12,99 @@
     android:background="@drawable/app_background"
     tools:context="com.ednerdaza.plannutricionaled.mvc.controllers.activities.ConfigurationsActivity">
 
-    <ScrollView
-        android:id="@+id/scrollView_config"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_alignParentTop="true">
+    <com.ednerdaza.plannutricionaled.mvc.controllers.widget.AccordionView
+                android:id="@+id/accordion_config"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                accordion:header_layout_fold_button_id="@id/foldButton"
+                accordion:header_layout_id="@layout/accordion_header"
+                accordion:header_layout_label_id="@id/foldText"
+                accordion:section_bottom="@layout/accordion_footer"
+                accordion:section_container="@layout/accordion_section"
+                accordion:section_container_parent="@id/section_content"
+                accordion:section_headers="@array/accordion_sections"
+                accordion:section_visibility="@array/accordion_visibility"
+                android:background="#fff5f5f5"
+                android:orientation="vertical">
 
-        <RelativeLayout
-            android:id="@+id/relativelayout_scrollview_config"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:paddingBottom="@dimen/padding_margin_10"
-            android:paddingLeft="@dimen/padding_margin_10"
-            android:paddingRight="@dimen/padding_margin_10"
-            android:paddingTop="@dimen/padding_margin_10"
-            android:background="@color/colorPrimaryAlfa">
+                <RelativeLayout
+                    android:id="@+id/relativelayout_milk_daily"
+                    android:gravity="center_vertical"
+                    android:layout_marginBottom="@dimen/padding_margin_10"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/textview_milk_title_config"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/colorWhite"
+                        android:gravity="center"
+                        android:textStyle="bold"
+                        android:textSize="@dimen/size_20"
+                        android:text="@string/milk_avaible" />
+
+                    <ListView
+                        android:id="@+id/listview_milk_daily"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="@dimen/padding_margin_10" />
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/example_get_by_id"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Item 2" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Item 3" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Item 4" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <RatingBar
+                        android:id="@+id/ratingBar1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <EditText
+                        android:id="@+id/editText1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                    <SeekBar
+                        android:id="@+id/seekBar1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Item 4" />
+
+            </com.ednerdaza.plannutricionaled.mvc.controllers.widget.AccordionView>
+
+
+
+
 
             <!--<TextView
                 android:id="@+id/textview_title_recommendations"
@@ -228,9 +307,5 @@
                 android:drawableStart="@drawable/dot"
                 android:drawableLeft="@drawable/dot"
                 android:drawablePadding="@dimen/padding_margin_10"/>-->
-
-        </RelativeLayout>
-
-    </ScrollView>
 
 </RelativeLayout>

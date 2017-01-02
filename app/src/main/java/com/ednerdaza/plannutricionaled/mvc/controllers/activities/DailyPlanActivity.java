@@ -16,6 +16,7 @@ import android.support.v4.view.ViewPager;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -78,6 +79,12 @@ public class DailyPlanActivity extends AppCompatActivity {
 
     }
 
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+        Log.v( Config.APP_LOG , " // onBackPressed Called from BaseActionBarActivity");
+        this.overridePendingTransition(R.anim.anim_slide_in_right, R.anim.anim_slide_out_right);
+    }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
@@ -105,11 +112,12 @@ public class DailyPlanActivity extends AppCompatActivity {
 
         //noinspection SimplifiableIfStatement
         if (id == R.id.action_switch_workouts) {
-            Intent mainIntent = new Intent().setClass(
-                    DailyPlanActivity.this, RecommendationsActivity.class);
+            //TODO : HACER QUE CAMBIE DE NUTRIVION A EJERCICIOS !!
+            /*Intent mainIntent = new Intent().setClass(
+                    MainActivity.this, RecommendationsActivity.class);
             startActivity(mainIntent);
-            //overridePendingTransition(R.anim.left_to_right, R.anim.right_to_left);
-            this.overridePendingTransition(R.anim.anim_slide_in_left, R.anim.anim_slide_out_left);
+            this.overridePendingTransition(R.anim.anim_slide_in_left, R.anim.anim_slide_out_left);*/
+            Toast.makeText(this, getResources().getString(R.string.toast_switch), Toast.LENGTH_SHORT).show();
             return true;
         }
 

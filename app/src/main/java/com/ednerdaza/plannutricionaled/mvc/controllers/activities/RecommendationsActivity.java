@@ -2,9 +2,11 @@ package com.ednerdaza.plannutricionaled.mvc.controllers.activities;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.MenuItem;
 
 import com.ednerdaza.plannutricionaled.R;
+import com.ednerdaza.plannutricionaled.mvc.controllers.utilities.Config;
 
 public class RecommendationsActivity extends AppCompatActivity {
 
@@ -12,7 +14,6 @@ public class RecommendationsActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_recommendations);
-        //getActionBar().setDisplayHomeAsUpEnabled(true);
     }
 
     @Override
@@ -20,11 +21,16 @@ public class RecommendationsActivity extends AppCompatActivity {
         switch (item.getItemId()) {
             case android.R.id.home:
                 finish();
-                //overridePendingTransition(R.anim.left_to_right, R.anim.right_to_left);
                 this.overridePendingTransition(R.anim.anim_slide_in_right, R.anim.anim_slide_out_right);
         }
         return super.onOptionsItemSelected(item);
     }
 
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+        Log.v( Config.APP_LOG , " // onBackPressed Called from BaseActionBarActivity");
+        this.overridePendingTransition(R.anim.anim_slide_in_right, R.anim.anim_slide_out_right);
+    }
 
 }
