@@ -6,6 +6,6 @@ package com.ednerdaza.plannutricionaled.mvc.controllers.utilities;
 public class Config  {
 
     public static final String APP_LOG = "APP_LOG";
-    public static final String SPINNER_DEFAULT = "-1";
+    public static final int SPINNER_DEFAULT = -1;
 
 }

@@ -29,6 +29,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.ednerdaza.plannutricionaled.R;
+import com.ednerdaza.plannutricionaled.mvc.controllers.utilities.Config;
 
 public class DailyPlanActivity extends AppCompatActivity {
 
@@ -92,6 +93,15 @@ public class DailyPlanActivity extends AppCompatActivity {
         // as you specify a parent activity in AndroidManifest.xml.
         int id = item.getItemId();
 
+        //noinspection SimplifiableIfStatement
+        if (id == R.id.action_configurations) {
+            Intent mainIntent = new Intent().setClass(
+                    DailyPlanActivity.this, ConfigurationsActivity.class);
+            startActivity(mainIntent);
+            //overridePendingTransition(R.anim.left_to_right, R.anim.right_to_left);
+            this.overridePendingTransition(R.anim.anim_slide_in_left, R.anim.anim_slide_out_left);
+            return true;
+        }
 
         //noinspection SimplifiableIfStatement
         if (id == R.id.action_switch_workouts) {
@@ -140,9 +150,15 @@ public class DailyPlanActivity extends AppCompatActivity {
             ArrayAdapter<CharSequence> adapterMilk = ArrayAdapter.createFromResource(
                     getContext(), R.array.milk_array, android.R.layout.simple_spinner_item);
             adapterMilk.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+
+            spinnerMilk.setSelection(Config.SPINNER_DEFAULT);
+            spinnerMilk.setPrompt(getResources().getString(R.string.milk_prompt));
+
             //spinnerMilk.setPrompt("Select your favorite Planet!");
             spinnerMilk.setAdapter(adapterMilk);
             spinnerMilk.setOnItemSelectedListener(this);
+
+            Toast.makeText(getContext(),"BIEN "+spinnerMilk.getAdapter().getCount(),Toast.LENGTH_SHORT).show();
 
 
             Spinner spinnerChesseOr = (Spinner) rootView.findViewById(R.id.spinner_chesse_or_daily);
@@ -185,9 +201,10 @@ public class DailyPlanActivity extends AppCompatActivity {
         }
 
         @Override
-        public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
-            Toast.makeText(getContext(),"BIEN "+i,Toast.LENGTH_SHORT).show();
-            if (i==0) {
+        public void onItemSelected(AdapterView<?> adapterView, View view, int position, long id) {
+            //Toast.makeText(getContext(),"BIEN "+position,Toast.LENGTH_SHORT).show();
+            Object e = adapterView.getItemAtPosition(position);
+            if (position==0) {
                 //view.setEnabled(false);
             }
             else{

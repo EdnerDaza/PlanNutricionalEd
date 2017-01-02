@@ -289,7 +289,7 @@
         android:layout_margin="@dimen/padding_margin_7"
         android:clickable="true"
         app:fabSize="normal"
-        app:srcCompat="@android:drawable/ic_media_ff"
+        app:srcCompat="@drawable/ic_arrow_forward_white_48dp"
         android:layout_alignParentBottom="true"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true"

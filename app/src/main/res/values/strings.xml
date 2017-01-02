@@ -140,6 +140,7 @@
         <item>Helado dietetico - 1 porcion</item>
     </string-array>
     <string name="sugar_prompt">Elije un Azucar o un Dulce</string>
+    <string name="action_configurations">Configuraciones</string>
     <string-array name="sugar_array">
         <item>Elije un Azucar o un Dulce</item>
         <item>Huevo - 1 vaso pequeño</item>
