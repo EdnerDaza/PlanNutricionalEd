@@ -83,4 +83,71 @@
     <string name="hint_fat">inserte numero de grasa&#8230;</string>
     <string name="sugar">AZUCAR</string>
     <string name="hint_sugar">inserte numero de azucar&#8230;</string>
+
+    <string name="milk_prompt">Elije un Lacteo</string>
+    <string-array name="milk_array">
+        <item>Elije un Lacteo</item>
+        <item>Leche - Descremada - 1 vaso pequeño</item>
+        <item>Kogurt - Descremada - 1 vaso pequeño</item>
+        <item>Kumis - Descremada - 1 vaso pequeño</item>
+        <item>Bebidas de soya - Descremada - 1 vaso pequeño</item>
+        <item>Leche en polvo - 3 cucharadas rasas</item>
+        <item>Helado dietetico - 1 porcion</item>
+    </string-array>
+    <string name="chesse_or_prompt">Elije un Queso o un Sustituto</string>
+    <string-array name="chesse_or_array">
+        <item>Elije un Queso o un Sustituto</item>
+        <item>Huevo - 1 vaso pequeño</item>
+        <item>Huevo de codorniz - 1 vaso pequeño</item>
+        <item>Quesito - 1 tajada delgada</item>
+        <item>Quesito campesino - 1 tajada delgada</item>
+        <item>Cuajada - 1 tajada delgada</item>
+        <item>Queso mozzarella - 1 tajada delgada</item>
+        <item>Mortadela - 1 tajada delgada</item>
+        <item>Jamon - 1 tajada delgada</item>
+        <item>Jamon pietran - 1 tajada delgada</item>
+        <item>Salchicha - 1 unidad</item>
+        <item>Salchichon - 1 rebanada</item>
+    </string-array>
+    <string name="flour_prompt">Elije una Harina</string>
+    <string-array name="flour_array">
+        <item>Elije una Harina</item>
+        <item>Leche - Descremada - 1 vaso pequeño</item>
+        <item>Kogurt - Descremada - 1 vaso pequeño</item>
+        <item>Kumis - Descremada - 1 vaso pequeño</item>
+        <item>Bebidas de soya - Descremada - 1 vaso pequeño</item>
+        <item>Leche en polvo - 3 cucharadas rasas</item>
+        <item>Helado dietetico - 1 porcion</item>
+    </string-array>
+    <string name="fruit_prompt">Elije una Fruta</string>
+    <string-array name="fruit_array">
+        <item>Elije una Fruta</item>
+        <item>Huevo - 1 vaso pequeño</item>
+        <item>Huevo de codorniz - 1 vaso pequeño</item>
+        <item>Kumis - Descremada - 1 vaso pequeño</item>
+        <item>Bebidas de soya - Descremada - 1 vaso pequeño</item>
+        <item>Leche en polvo - 3 cucharadas rasas</item>
+        <item>Helado dietetico - 1 porcion</item>
+    </string-array>
+    <string name="fat_prompt">Elije una Grasa</string>
+    <string-array name="fat_array">
+        <item>Elije una Grasa</item>
+        <item>Leche - Descremada - 1 vaso pequeño</item>
+        <item>Kogurt - Descremada - 1 vaso pequeño</item>
+        <item>Kumis - Descremada - 1 vaso pequeño</item>
+        <item>Bebidas de soya - Descremada - 1 vaso pequeño</item>
+        <item>Leche en polvo - 3 cucharadas rasas</item>
+        <item>Helado dietetico - 1 porcion</item>
+    </string-array>
+    <string name="sugar_prompt">Elije un Azucar o un Dulce</string>
+    <string-array name="sugar_array">
+        <item>Elije un Azucar o un Dulce</item>
+        <item>Huevo - 1 vaso pequeño</item>
+        <item>Huevo de codorniz - 1 vaso pequeño</item>
+        <item>Kumis - Descremada - 1 vaso pequeño</item>
+        <item>Bebidas de soya - Descremada - 1 vaso pequeño</item>
+        <item>Leche en polvo - 3 cucharadas rasas</item>
+        <item>Helado dietetico - 1 porcion</item>
+    </string-array>
+
 </resources>

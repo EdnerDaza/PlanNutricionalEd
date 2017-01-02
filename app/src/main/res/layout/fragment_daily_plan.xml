@@ -61,10 +61,12 @@
 
                 <Spinner
                     android:id="@+id/spinner_milk_daily"
+                    android:spinnerMode="dropdown"
+                    android:prompt="@string/milk_prompt"
                     android:layout_marginTop="@dimen/padding_margin_10"
                     android:layout_below="@+id/textview_milk_daily"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"/>
+                    android:layout_height="wrap_content" />
 
             </RelativeLayout>
 
@@ -103,6 +105,8 @@
 
                 <Spinner
                     android:id="@+id/spinner_chesse_or_daily"
+                    android:prompt="@string/chesse_or_prompt"
+                    android:spinnerMode="dropdown"
                     android:layout_marginTop="@dimen/padding_margin_10"
                     android:layout_below="@+id/textview_chesse_or_daily"
                     android:layout_width="match_parent"
@@ -145,6 +149,8 @@
 
                 <Spinner
                     android:id="@+id/spinner_flour_daily"
+                    android:prompt="@string/flour_prompt"
+                    android:spinnerMode="dropdown"
                     android:layout_marginTop="@dimen/padding_margin_10"
                     android:layout_below="@+id/textview_flour_daily"
                     android:layout_width="match_parent"
@@ -187,6 +193,8 @@
 
                 <Spinner
                     android:id="@+id/spinner_fruit_daily"
+                    android:prompt="@string/fruit_prompt"
+                    android:spinnerMode="dropdown"
                     android:layout_marginTop="@dimen/padding_margin_10"
                     android:layout_below="@+id/textview_fruit_daily"
                     android:layout_width="match_parent"
@@ -229,6 +237,8 @@
 
                 <Spinner
                     android:id="@+id/spinner_fat_daily"
+                    android:prompt="@string/fat_prompt"
+                    android:spinnerMode="dropdown"
                     android:layout_marginTop="@dimen/padding_margin_10"
                     android:layout_below="@+id/textview_fat_daily"
                     android:layout_width="match_parent"
@@ -271,6 +281,8 @@
 
                 <Spinner
                     android:id="@+id/spinner_sugar_daily"
+                    android:prompt="@string/sugar_prompt"
+                    android:spinnerMode="dropdown"
                     android:layout_marginTop="@dimen/padding_margin_10"
                     android:layout_below="@+id/textview_sugar_daily"
                     android:layout_width="match_parent"

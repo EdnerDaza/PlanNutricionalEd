@@ -22,7 +22,11 @@ import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 
+import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
+import android.widget.Spinner;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.ednerdaza.plannutricionaled.R;
 
@@ -105,7 +109,7 @@ public class DailyPlanActivity extends AppCompatActivity {
     /**
      * A placeholder fragment containing a simple view.
      */
-    public static class PlaceholderFragment extends android.support.v4.app.Fragment {
+    public static class PlaceholderFragment extends android.support.v4.app.Fragment implements AdapterView.OnItemSelectedListener{
         /**
          * The fragment argument representing the section number for this
          * fragment.
@@ -131,9 +135,69 @@ public class DailyPlanActivity extends AppCompatActivity {
         public View onCreateView(LayoutInflater inflater, ViewGroup container,
                                  Bundle savedInstanceState) {
             View rootView = inflater.inflate(R.layout.fragment_daily_plan, container, false);
+
+            Spinner spinnerMilk = (Spinner) rootView.findViewById(R.id.spinner_milk_daily);
+            ArrayAdapter<CharSequence> adapterMilk = ArrayAdapter.createFromResource(
+                    getContext(), R.array.milk_array, android.R.layout.simple_spinner_item);
+            adapterMilk.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+            //spinnerMilk.setPrompt("Select your favorite Planet!");
+            spinnerMilk.setAdapter(adapterMilk);
+            spinnerMilk.setOnItemSelectedListener(this);
+
+
+            Spinner spinnerChesseOr = (Spinner) rootView.findViewById(R.id.spinner_chesse_or_daily);
+            ArrayAdapter<CharSequence> adapterChesseOr = ArrayAdapter.createFromResource(
+                    getContext(), R.array.chesse_or_array, android.R.layout.simple_spinner_item);
+            adapterChesseOr.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+            //spinnerChesseOr.setPrompt("Select your favorite Planet!");
+            spinnerChesseOr.setAdapter(adapterChesseOr);
+            /*if(spinnerChesseOr.getSelectedItem().ge == 0){
+                Toast.makeText(getContext(),"BIEN",Toast.LENGTH_SHORT).show();
+            }*/
+
+            Spinner spinnerFlour = (Spinner) rootView.findViewById(R.id.spinner_flour_daily);
+            ArrayAdapter<CharSequence> adapterFlour = ArrayAdapter.createFromResource(
+                    getContext(), R.array.flour_array, android.R.layout.simple_spinner_item);
+            adapterFlour.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+            spinnerFlour.setAdapter(adapterFlour);
+
+            Spinner spinnerFruit = (Spinner) rootView.findViewById(R.id.spinner_fruit_daily);
+            ArrayAdapter<CharSequence> adapterFruit = ArrayAdapter.createFromResource(
+                    getContext(), R.array.fruit_array, android.R.layout.simple_spinner_item);
+            adapterFruit.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+            spinnerFruit.setAdapter(adapterFruit);
+
+            Spinner spinnerFat = (Spinner) rootView.findViewById(R.id.spinner_fat_daily);
+            ArrayAdapter<CharSequence> adapterFat = ArrayAdapter.createFromResource(
+                    getContext(), R.array.fat_array, android.R.layout.simple_spinner_item);
+            adapterFat.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+            spinnerFat.setAdapter(adapterFat);
+
+            Spinner spinnerSugar = (Spinner) rootView.findViewById(R.id.spinner_sugar_daily);
+            ArrayAdapter<CharSequence> adapterSugar = ArrayAdapter.createFromResource(
+                    getContext(), R.array.sugar_array, android.R.layout.simple_spinner_item);
+            adapterSugar.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+            spinnerSugar.setAdapter(adapterSugar);
+
             /*TextView textView = (TextView) rootView.findViewById(R.id.section_label);
             textView.setText(getString(R.string.section_format, getArguments().getInt(ARG_SECTION_NUMBER)));*/
             return rootView;
+        }
+
+        @Override
+        public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
+            Toast.makeText(getContext(),"BIEN "+i,Toast.LENGTH_SHORT).show();
+            if (i==0) {
+                //view.setEnabled(false);
+            }
+            else{
+                //adapterView.setEnabled(true);
+            }
+        }
+
+        @Override
+        public void onNothingSelected(AdapterView<?> adapterView) {
+
         }
     }
 
