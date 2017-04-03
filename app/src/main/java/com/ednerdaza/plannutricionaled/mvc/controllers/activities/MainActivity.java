@@ -1,16 +1,29 @@
 package com.ednerdaza.plannutricionaled.mvc.controllers.activities;
 
+import android.content.Context;
+import android.content.DialogInterface;
 import android.content.Intent;
+import android.os.Build;
+import android.support.annotation.NonNull;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
+import android.support.v4.app.DialogFragment;
+import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.view.ContextThemeWrapper;
+import android.text.Editable;
 import android.util.Log;
+import android.view.Gravity;
+import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
+import android.widget.CalendarView;
 import android.widget.EditText;
+import android.widget.LinearLayout;
+import android.widget.PopupWindow;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -18,7 +31,12 @@ import com.ednerdaza.plannutricionaled.R;
 import com.ednerdaza.plannutricionaled.mvc.controllers.utilities.AppPreferences;
 import com.ednerdaza.plannutricionaled.mvc.controllers.utilities.Config;
 
-public class MainActivity extends AppCompatActivity implements View.OnClickListener{
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
+
+public class MainActivity extends AppCompatActivity implements View.OnClickListener,
+        CalendarDialogFragment.NoticeDialogListener{
 
     private AppPreferences mAppPreferences;
     private Button mButtonEditSave, mButtonCancel;
@@ -40,6 +58,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         mButtonCancel= (Button)findViewById(R.id.button_cancel_footer_main);
         mFloatingActionButtonNext = (FloatingActionButton) findViewById(R.id.floatingactionbutton_main);
 
+        //mCalendarView.setOnDateChangeListener(this);
         mButtonEditSave.setOnClickListener(this);
         mButtonCancel.setOnClickListener(this);
         mFloatingActionButtonNext.setOnClickListener(this);
@@ -51,6 +70,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         mEditTextIMC = (EditText) findViewById(R.id.edittext_imc_main);
         mEditTextRefWeigth = (EditText) findViewById(R.id.edittext_ref_weigth_main);
         mEditTextGoalWeigth = (EditText) findViewById(R.id.edittext_goal_weigth_main);
+
+        mEditTextDate.setOnClickListener(this);
 
         openPreferences();
     }
@@ -88,6 +109,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 startActivity(mainIntent);
                 //overridePendingTransition(R.anim.left_to_right, R.anim.right_to_left);
                 this.overridePendingTransition(R.anim.anim_slide_in_left, R.anim.anim_slide_out_left);
+                break;
+
+            case R.id.edittext_date_main:
+                //popupWindowCalendar();
+                showNoticeDialog(v);
                 break;
 
             default:
@@ -313,4 +339,17 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         }
     }
 
+    public void showNoticeDialog(View v) {
+        EditText editText = (EditText) v;
+        String date = editText.getText().toString();
+        // Create an instance of the dialog fragment and show it
+        DialogFragment dialog = new CalendarDialogFragment();
+        dialog.show(getSupportFragmentManager(), "NoticeDialogFragment");
+    }
+
+    @Override
+    public void onDialogPositiveClick(String date) {
+        Toast.makeText(this, "POSITIVE", Toast.LENGTH_SHORT).show();
+        mEditTextDate.setText(date);
+    }
 }

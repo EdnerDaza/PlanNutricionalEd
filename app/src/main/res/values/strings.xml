@@ -145,6 +145,13 @@
     <string name="milk_avaible">LACTEOS DISPONIBLES</string>
     <string name="milk_milk">Leche</string>
     <string name="item">Item</string>
+    <string name="cal_desc">Description</string>
+    <string name="dialog_fire_missiles">Fire Missiles?</string>
+    <string name="fire">FIRE</string>
+    <string name="cancel">CANCEL</string>
+    <string name="ok">OK</string>
+    <string name="dialog_title_calendar">Event Calendar</string>
+    <string name="dialog_message_calendar">Click to schedule or view events.</string>
     <string-array name="sugar_array">
         <item>Elije un Azucar o un Dulce</item>
         <item>Huevo - 1 vaso pequeño</item>

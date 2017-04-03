@@ -70,6 +70,11 @@
                     android:textSize="@dimen/size_17"
                     android:text="@string/date" />
 
+                <!--<CalendarView
+                    android:id="@+id/calendar_view_main"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>-->
+
                 <EditText
                     android:id="@+id/edittext_date_main"
                     android:layout_width="match_parent"
@@ -79,6 +84,8 @@
                     android:hint="@string/hint_date"
                     android:textStyle="italic"
                     android:gravity="start"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
                     android:enabled="true"/>
 
                 <TextView
