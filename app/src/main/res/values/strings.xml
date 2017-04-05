@@ -83,6 +83,15 @@
     <string name="hint_fat">inserte numero de grasa&#8230;</string>
     <string name="sugar">AZUCAR</string>
     <string name="hint_sugar">inserte numero de azucar&#8230;</string>
+    <string name="milks">LACTEOS</string>
+    <string name="cheese_and">QUESO Y SUSTITUTOS</string>
+    <string name="meat">CARNES</string>
+    <string name="cereal_or">CEREALES o HARINAS</string>
+    <string name="leguminous">LEGUMINOSAS</string>
+    <string name="vegetables">VERDURAS</string>
+    <string name="fruits">FRUTAS</string>
+    <string name="sugar_and">AZUCARES Y DULCES</string>
+    <string name="fats">GRASAS</string>
 
     <string name="milk_prompt">Elije un Lacteo</string>
     <string-array name="milk_array">
@@ -177,4 +186,10 @@
         <item>0</item>
         <item>0</item>
     </integer-array>
+    <string name="title_activity_config">Configuration Activity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="title_activity_configuration">Configuration Activity</string>
+
 </resources>

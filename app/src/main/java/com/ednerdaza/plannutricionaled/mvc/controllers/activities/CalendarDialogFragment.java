@@ -28,7 +28,6 @@ import java.util.GregorianCalendar;
 public class CalendarDialogFragment extends DialogFragment {
 
     private DateFormat dateFormat = new SimpleDateFormat("dd/MM/yyyy");
-    private String result = "";
 
     /* The activity that creates an instance of this dialog fragment must
         * implement this interface in order to receive event callbacks.

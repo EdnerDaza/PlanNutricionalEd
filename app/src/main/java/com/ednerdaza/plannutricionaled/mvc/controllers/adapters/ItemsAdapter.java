@@ -8,6 +8,7 @@ import android.widget.ArrayAdapter;
 import android.widget.Switch;
 
 import com.ednerdaza.plannutricionaled.R;
+import com.ednerdaza.plannutricionaled.mvc.controllers.activities.ConfigurationActivity;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -62,7 +63,7 @@ public class ItemsAdapter extends ArrayAdapter {
         View item = inflater.inflate(R.layout.listview_items, null);
 
         Switch switchItem = (Switch) item.findViewById(R.id.switch_item_config);
-        switchItem.setText("Edner");
+        switchItem.setText(datos[position]);
 
         // Devolvemos la vista para que se muestre en el ListView.
         return item;

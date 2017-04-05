@@ -103,7 +103,7 @@ public class DailyPlanActivity extends AppCompatActivity {
         //noinspection SimplifiableIfStatement
         if (id == R.id.action_configurations) {
             Intent mainIntent = new Intent().setClass(
-                    DailyPlanActivity.this, ConfigurationsActivity.class);
+                    DailyPlanActivity.this, ConfigurationActivity.class);
             startActivity(mainIntent);
             //overridePendingTransition(R.anim.left_to_right, R.anim.right_to_left);
             this.overridePendingTransition(R.anim.anim_slide_in_left, R.anim.anim_slide_out_left);
@@ -268,4 +268,5 @@ public class DailyPlanActivity extends AppCompatActivity {
             return null;
         }
     }
+
 }

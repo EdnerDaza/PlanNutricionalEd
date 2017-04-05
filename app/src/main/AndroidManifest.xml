@@ -38,13 +38,21 @@
             android:name=".mvc.controllers.activities.DailyPlanActivity"
             android:label="@string/title_activity_daily_plan"
             android:windowSoftInputMode="stateHidden" />
-        <activity android:name=".mvc.controllers.activities.ConfigurationsActivity"
-            android:parentActivityName=".mvc.controllers.activities.DailyPlanActivity"
-            android:label="@string/action_configurations">
+        <activity
+            android:name=".mvc.controllers.activities.ConfigurationsActivity"
+            android:label="@string/action_configurations"
+            android:parentActivityName=".mvc.controllers.activities.DailyPlanActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".mvc.controllers.activities.DailyPlanActivity" />
         </activity>
+        <activity
+            android:name=".mvc.controllers.activities.ConfigActivity"
+            android:label="@string/title_activity_config" />
+        <activity
+            android:name=".mvc.controllers.activities.ConfigurationActivity"
+            android:label="@string/title_activity_configuration"
+            android:windowSoftInputMode="stateHidden"/>
     </application>
 
 </manifest>
